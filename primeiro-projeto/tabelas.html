@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+     
+    <style>
+        table, td, th {
+            border: 1px solid rgb(0, 0, 0);
+        }
+    </style>
+
 </head>
 <body>
     <a href="index.html">Primeira Página</a>
@@ -12,7 +19,7 @@
 
     <h2>Produtos</h2>
 
-    <table border="2" width="100%" >
+    <table  width="100%" >
         <tr>
             <th>Código</th>
             <th>Produto</th>
@@ -39,6 +46,10 @@
             <td>Mesa</td>
             <td>R$ 400,00</td>
         </tr>
+        <!--
+            colspan -> extensão da coluna
+            rowspan -> estensão de linha 
+        -->
             <td rowspan="2">desconto</td>
             <td colspan="2">cupom 1 -R$ 10,00</td>
         </tr>
@@ -49,7 +60,49 @@
             <td>total:</td>
             <td colspan="2">3478,98</td>
         </tr>
+
     </table>
+
+    <h1><strong>Mais sobre tabelas</strong></h1>
+
+    <!--
+        caption -> Legenda / título da tabela
+        theade -> Table Haeder (cabeçalho da tabela)
+        tbody -> Table Body (corpo da tabela)
+        tfoot -> Table Footer (rodapé da tabela)
+    -->
+
+    <table>
+        <caption>Listagem de produtos</caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Notebook</td>
+                <td>1</td>
+                <td>R$ 2000</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>2</td>
+                <td>R$ 1000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="2">R$ 4000</td>
+            </tr>
+        </tfoot>
+    </table>
+        
 
 
 </body>
