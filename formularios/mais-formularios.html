@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais sobre formulários</title>
+</head>
+<body>
+    
+    <h1>Mais sobre formulários</h1>
+
+    <form action="" method="get">
+
+        <!--
+        label -> Legenda para um item da interface
+        for -> para
+        -->
+
+        <h2>Label</h2>
+
+        <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+
+        <h2>Mais elementos</h2>
+
+        Gênero <br>
+        <input type="radio" name="genero" value="feminino">Feminino
+        <input type="radio" name="genero" value="masculino">Masculino
+        <br><br>
+        <input type="submit" name="cadastrar" id="">
+
+        Estilo musical <br>
+        <input type="checkbox" name="estilo" value="rock">Rock
+        <input type="checkbox" name="estilo" value="pop">Pop
+        <input type="checkbox" name="estilo" value="sertanejo">Sertanejo
+
+        
+    </form>
+</body>
+</html>
