@@ -37,11 +37,56 @@
         <input type="submit" name="cadastrar" id="">
 
         Estilo musical <br>
-        <input type="checkbox" name="estilo" value="rock">Rock
-        <input type="checkbox" name="estilo" value="pop">Pop
-        <input type="checkbox" name="estilo" value="sertanejo">Sertanejo
+        <input type="checkbox" name="estilo" value="rock" id="rock">
+        <label for="rock">Rock</label>
+        <input type="checkbox" name="estilo" value="pop" id="pop">
+        <label for="pop">Pop</label>
+        <input type="checkbox" name="estilo" value="sertanejo" id="sertanejo">
+        <label for="sertanejo">Sertanejo</label>
 
-        
+        <br><br>
+
+        Estado:
+        <select name="Estado" id="">
+            <option value="">Selecione...</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="to">Tocantins</option>
+            <option value="ap">Amapá</option>
+        </select>
+
+        <br><br>
+
+        Upload de arquivos:
+        <input type="file" name="arquivos">
+
+        <br><br>
+
+        <input type="submit" value="cadastrar">
+    </form>
+
+    <form action="">
+<!--
+        fieldset -> conjunto de campo
+        legend -> legenda para o conjunto-->
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+            Nome:
+            <input type="text" name="nome">
+        </label>
+
+        <label for="email2">Email</label>
+        <input type="text" name="email" id="email2">
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados adicionais</legend>
+            Gênero <br>
+        <input type="radio" name="genero" value="feminino">Feminino
+        <input type="radio" name="genero" value="masculino">Masculino
+        </fieldset>
     </form>
 </body>
 </html>
