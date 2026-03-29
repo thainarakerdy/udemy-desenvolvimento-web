@@ -6,5 +6,18 @@ body {
     background-color: cadetblue;
 }
 table {
-    line border: 5px;
+    border:  rgb(6, 0, 0);
+    border-style: solid 5px;
+    background-color: rgba(121, 121, 215, 0.411);
+}
+p {
+    color: rgb(220,20,60);
+    
+}
+li {
+    background-color: azure;
+    border: salmon 1px solid;
+}
+a{
+    color: rgb(4, 97, 66);
 }
